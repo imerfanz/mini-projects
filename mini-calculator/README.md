@@ -7,7 +7,7 @@ A simple calculator built using React.
 - Basic arithmetic operations (`+`, `-`, `*`, `/`)
 - Handles negative numbers and multiple operators
 - Error handling for invalid expressions
-- Responsive and interactive UI
+- Interactive UI
 
 ## Installation
 
