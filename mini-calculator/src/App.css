@@ -1,0 +1,68 @@
+@import url("https://fonts.cdnfonts.com/css/digital-7");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1d1e22;
+  margin: 0;
+}
+.calculator {
+  width: 600px;
+  margin: auto;
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.display {
+  background: black;
+  color: white;
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #a6a698;
+  transition: all 50ms ease-in;
+  color: white;
+  font-weight: 600;
+}
+.equals {
+  background-color: #ffa314;
+  color: white;
+}
+.operator {
+  background-color: #656559;
+  color: white;
+}
+
+#clear {
+  grid-column: span 2;
+  background-color: #bb3539;
+}
+#zero {
+  grid-column: span 2;
+}
+#equals {
+  grid-row: span 2;
+}
+
+button:active {
+  transform: scale(0.9);
+  filter: brightness(110%);
+}
