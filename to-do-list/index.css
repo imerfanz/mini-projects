@@ -1,0 +1,182 @@
+:root {
+  --text-color: #1c0601;
+  --bg: white;
+  --bar-bg: #9d8e68;
+  --rm-bg: #516035;
+  --main-bg: #585129;
+}
+
+body {
+  text-align: center;
+  background-color: var(--main-bg);
+  min-width: 1000px;
+}
+
+#mainBG {
+  background-image: url("brown-aesthetic-library-9fnm849mq5he1vq9.jpg");
+  width: 800px;
+  min-width: 700px;
+  height: 700px;
+  overflow-y: scroll;
+  margin-left: 27%;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  position: relative;
+}
+
+#task {
+  font-size: 22px;
+  width: 380px;
+  height: 40px;
+  background-color: var(--bar-bg);
+  color: var(--text-color);
+  border-radius: 10px;
+  margin: 15px;
+  margin-top: 40px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#adderBtn {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--bar-bg);
+  border: 1px solid black;
+  transition: all 100ms ease-out;
+}
+
+#adderBtn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 5px 2px gray;
+}
+
+ul {
+  position: absolute;
+  left: 105px;
+}
+
+ul li {
+  background-color: var(--bg);
+  width: 500px;
+  height: 80px;
+  position: relative;
+  border-radius: 10px;
+  margin: 5px;
+  display: flex;
+  text-align: center;
+  transition: all 100ms ease-out , width 500ms ease-out;
+}
+
+.cards {
+  width: 50px;
+  overflow: hidden;
+}
+
+li input {
+  position: absolute;
+  left: -55px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+li p {
+  margin: 10px;
+  margin-top: 25px;
+  color: var(--text-color);
+  font-style: italic;
+  font-size: 22px;
+}
+
+li .rmvButton {
+  position: absolute;
+  right: 0px;
+  background-color: var(--rm-bg);
+  border: none;
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  height: 80px;
+  width: 50px;
+  color: var(--text-color);
+  transition: all 100ms ease-out;
+}
+
+li button:hover {
+  box-shadow: 0px 0px 5px 2px gray;
+  cursor: pointer;
+}
+
+#reportP {
+  margin-left: 160px;
+  font-size: 15px;
+  color: var(--text-color);
+}
+
+#clearLocal {
+  border: none;
+  font-size: 15px;
+  margin-left: 15px;
+  background-color: var(--bg);
+  color: var(--text-color);
+}
+
+#clearLocal:hover {
+  text-shadow: 1px 1px gray;
+  box-shadow: 0px 0px 0px 0px gray;
+}
+
+.dragged {
+  border: 2px solid red;
+}
+
+ul li:hover {
+  box-shadow: 0px 0px 2px 2px rgb(136, 108, 108);
+  cursor: pointer;
+}
+
+ul li:last-child:hover{
+  box-shadow: 0px 0px 0px 0px white;
+
+}
+
+.TOrder{
+  position: absolute;
+  right: -55px;
+  color: var(--bg);
+  width: 30px;
+  height: 30px;
+  border: 2px solid var(--bar-bg);
+  top: -7px;
+  border-radius: 50%;
+}
+
+.DoneTask{
+  text-decoration: line-through;
+}
+
+#percent{
+  position: absolute;
+  right:40px;
+  font-size: 16px;
+  z-index: 0;
+  top: 5px;
+}
+
+#reportP{
+  z-index: 1;
+  background-color: var(--bg);
+  transition: all 200ms ease-out;
+}
+
+#reportP:hover {
+  transform: scale(0.5);
+opacity: 0;
+}
+
